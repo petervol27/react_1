@@ -9,7 +9,12 @@ function StudentForm({ addStudent }) {
   const [accepted, setAccepted] = useState(null);
   const studentCheck = (e) => {
     e.preventDefault();
-    if (studentForm.city === 'tel-aviv' && studentForm.age > 20) {
+    if (
+      studentForm.age > 20 &&
+      (studentForm.city === 'tel-aviv' ||
+        studentForm.city === 'beer sheva' ||
+        studentForm.city === 'rishon lezion')
+    ) {
       setAccepted(true);
       addStudent({ ...studentForm });
     } else {

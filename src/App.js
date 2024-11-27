@@ -4,8 +4,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import BasicCalc from './components/BasicCalc';
 import StudentForm from './components/StudentForm';
-import StudentList from './components/StudentList';
 import { useState } from 'react';
+import StudentList from './components/StudentList';
+
 function App() {
   const [students, setStudents] = useState([]);
 
